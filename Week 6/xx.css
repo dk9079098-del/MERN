@@ -50,3 +50,32 @@
     font-size: 0.9rem;
     color: #4b5563;
 }
+.top-bar {
+    position: sticky;
+    top: 0;
+    background-color: #102a43;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    z-index: 1000;
+}
+.fab-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 56px;
+    height: 56px;
+    background-color: #fbbf24;
+    color: #1f2937;
+    border: none;
+    border-radius: 50%;
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 2000;
+    transition: background-color 0.2s ease;
+}
