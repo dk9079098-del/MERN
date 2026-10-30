@@ -23,12 +23,12 @@ body{
 .nav-right {
     display: flex;
     align-items: center;
-    gap: 25;
+    gap: 35;
 }
 .nav-links{
     display: flex;
     list-style: none;
-    gap: 20px;
+    gap: 30px;
 }   
 .nav-links a{
     color: #ffffff;
@@ -99,4 +99,18 @@ body{
 .card p {
     color : #4b5563;
     font-size: 0.95rem;
+}
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction:column;
+        gap : 15 px;
+    }
+    .nav-right{
+        flex-direction: column;
+        gap : 15px;
+    }
+    .cards-container{
+        padding : 20px;
+    }
+    
 }
