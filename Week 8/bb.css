@@ -10,8 +10,14 @@ body {
             display: grid;
             grid-template-columns: 240px 1fr;
             grid-template-rows: auto 1fr auto;
-            gap: 20px;  
-}
+            gap: 20px;
+            grid-template-areas:
+                "head head"
+                "side main"
+                "foot foot";
+            width: 100%;
+            max-width: 1200px;
+        }  
 
 .main-content {
             grid-area: main;
@@ -19,4 +25,30 @@ body {
             grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
             gap: 20px;
             align-content: start;
+        }
+.header {
+            grid-area: head; 
+            background-color: #112240;
+            color: white;
+            padding: 25px;
+            border-radius: 12px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .sidebar {
+            grid-area: side; 
+            background-color: #dbeafe;
+            color: #1e3a8a;
+            padding: 20px;
+            border-radius: 12px;
+        }
+.footer {
+            grid-area: foot;  
+            background-color: #112240;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 12px;
+            font-size: 14px;
         }
